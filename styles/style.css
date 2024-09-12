@@ -84,9 +84,6 @@ svg {
     margin-left: 2rem;
 }
 
-.logo {
-    padding: 1rem;
-}
 
 .navigator {
     display: flex;
@@ -102,6 +99,7 @@ svg {
 }
 
 .nav-item {
+    text-wrap: nowrap;
     text-transform: uppercase;
     color: var(--clr-main);
 }
@@ -202,6 +200,7 @@ svg {
     from {
         opacity: .2;
     }
+
     to {
         opacity: 1;
     }
@@ -277,6 +276,7 @@ svg {
 }
 
 .text-hover {
+    text-wrap: nowrap;
     text-align: center;
     font-size: var(--fs-h2);
     text-transform: uppercase;
@@ -403,9 +403,163 @@ svg {
     z-index: -1;
 }
 
-.phone-frame:hover + .cat-face {
+.phone-frame:hover+.cat-face {
     filter: blur(0);
 }
 
+@media (min-width:769px) {
+    .discord {
+        width: 105px;
+    }
+}
+
+@media (max-width: 865px) {
+
+    .main-section {
+        margin-top: 3rem;
+        height: 60vh;
+    }
+
+    .hover-item {
+        width: 50%;
+    }
 
 
+    .cat-img-hover {
+        width: 130px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .about-nemo-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 865px) {
+    [class*=gay-cat] {
+        width: 180px;
+    }
+
+    .gay-cat1 {
+        top: 40%;
+        transform: translateY(-50%);
+        left: 7px;
+    }
+
+    .gay-cat2 {
+        left: 20%;
+        bottom: 40px;
+    }
+
+    .gay-cat3 {
+        right: 14px;
+        bottom: 120px;
+    }
+
+    .gay-cat4 {
+        right: 10px;
+        /* border: 10px solid red; */
+    }
+
+    .gay-cat5 {
+        right: unset;
+        left: 30px;
+    }
+}
+
+@media (max-width: 665px) {
+    .navigator {
+        display: none;
+    }
+
+    .logo-container {
+        width: 55%;
+    }
+
+    .logo {
+        padding: 2rem;
+        padding-left: .5rem;
+    }
+
+    .links-list {
+        width: 25%;
+    }
+
+    .discord {
+        width: 150px;
+        margin-right: 2rem;
+    }
+
+    .hover-item {
+        width: 30%;
+    }
+
+    .hover-to-see {
+        transform: translate(-23px);
+    }
+
+    [class*=gay-cat] {
+        width: 160px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card-image {
+        width: 50%;
+    }
+
+    .card-text {
+        width: 90%;
+    }
+
+    .links-list {
+        width: 33%;
+    }
+
+    .discord {
+        width: 90px;
+    }
+
+    .shit {
+        flex-direction: column-reverse;
+    }
+
+    .kitty3 {
+        bottom: 150px;
+        left: 0;
+    }
+
+    .kitty4 {
+        bottom: 150px;
+        right: 0;
+    }
+
+    .gay-cat1 {
+        top: 200px;
+    }
+
+    .gay-cat2 {
+        bottom: 180px;
+    }
+
+    .gay-cat4 {
+        top: 100px;
+    }
+
+    .gay-cat5 {
+        top: -40px;
+        left: 100px;
+    }
+
+    [class*=gay-cat] {
+        width: 120px;
+    }
+}
